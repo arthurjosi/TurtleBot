@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<launch>
+	
+	<!-- Connexion au robot -->
+	<include file="$(find turtlebot_bringup)/launch/minimal.launch" />$
+	
+	<!-- Active le noeud du laser -->
+	<node pkg="urg_node" type="urg_node" name="urg_node" />
+
+	<!-- Position du laser dans tf par rapport a la base du robot -->
+	<node pkg="tf" type="static_transform_publisher" name="add_laser_to_baselink" args="0.1 0 0.13 0 0 0 base_link laser 100">
+	</node>
+	
+	<!-- Paramettrage de la creation de la carte afin de ne garder que les donnees laser suffisament proches  -->
+	<node pkg="gmapping" type="slam_gmapping" name="slam_gmapping">
+		<param name="maxURange" value="4"/>
+		<param name="map_update_interval" value="5.0"/>
+	</node> 
+
+	<!-- Ouverture de rviz configurer pour permettre la creation de la carte et le positionnement de marqueurs -->
+	<!--<node name="rviz" pkg="rviz" type="rviz" args="-d $(find using_markers)/src/navigation.rviz"/>-->
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find simple_controller)/rviz/navigation_marker.rviz"/>
+
+	<!-- Node permettant de detecter les objets et de placer les marqueurs --> 
+	<node pkg="simple_controller" type="detection_et_marqueurs.py" name="Objets_et_marqueurs"/>
+
+	<!-- Node permettant l exploration autonome de l environnement -->
+	<node pkg="simple_controller" type="exploration_autonome.py" name="explo_auto"/>
+
+</launch>

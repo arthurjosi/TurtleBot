@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- Connection au robot --> 
+	<include file="$(find turtlebot_bringup)/launch/minimal.launch" />
+
+	<!--Activation du noeud correspondant aux donnees laser -->
+	<node pkg="urg_node" type="urg_node" name="urg_node" />
+
+	<!--Placement du laser par rapport a la frame du robot--> 
+	<node pkg="tf" type="static_transform_publisher" name="add_laser_to_baselink" args="0.1 0 0.13 0 0 0 base_link laser 100"/>
+
+	<!-- Lance le noeud qui permet la creation de la map a partir des donnees laser --> 
+	<node pkg="gmapping" type="slam_gmapping" name="slam_gmapping">
+		<!--On donne ici des parametres de distances max gardees sur les donnees laser pour la creation de map-->
+		<param name="maxURange" value="4.0"/>
+		<param name="map_update_interval" value="5.0"/>
+	</node> 
+
+	<!--Ouverture de rviz avec les parametres pre-etablis pour la creation de la map et le positionnement des marqueurs--> 
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find simple_controller)/rviz/navigation_marker.rviz"/>
+
+	<!-- Node du script python permettant la detection et le positionnement des marqueurs --> 
+	<node pkg="simple_controller" type="detection_et_marqueurs.py" name="Objets_et_marqueurs"/>
+</launch>
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- Connection au robot --> 
+	<include file="$(find turtlebot_bringup)/launch/minimal.launch" />
+	
+	<!--Activation du noeud correspondant aux donnees laser -->
+	<node pkg="urg_node" type="urg_node" name="urg_node" />
+	
+	<!--Placement du laser par rapport a la frame du robot--> 
+	<node pkg="tf" type="static_transform_publisher" name="add_laser_to_baselink" args="0.13 0 0.13 0 0 0 base_link laser 100"/>
+	
+	<!--Recuperation de la carte (de la deuxieme salle) dans laquelle on veut donner des points de deplacement objectifs --> 
+	<include file="$(find turtlebot_navigation)/launch/amcl_demo.launch"> 
+		<arg name="map_file" value="/home/bot/catkin_ws/src/map/map2_eval.yaml"/>
+	</include>
+
+	<!-- Ouverture de rviz configurer pour permettre la creation de la carte et le positionnement de marqueurs -->
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find simple_controller)/rviz/navigation_marker.rviz"/>
+
+	<!-- Node permettant de detecter les objets et de placer les marqueurs --> 
+	<node pkg="simple_controller" type="detection_et_marqueurs_propre.py" name="Objets_et_marqueurs"/>
+
+</launch>

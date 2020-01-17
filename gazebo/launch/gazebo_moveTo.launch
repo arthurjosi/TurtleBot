@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+	<include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch" />
+	
+	<!--<include file="$(find turtlebot_gazebo)/launch/amcl_demo.launch">
+		<param name="map_file" value="/home/bot/catkin_ws/src/map/map_finale.yaml" />
+	</include>
+
+
+	<include file="$(find turtlebot_rviz_launchers)/launch/view_navigation.launch" />-->
+</launch>
+
+
