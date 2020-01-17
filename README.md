@@ -1,5 +1,6 @@
 Project Name : TurtleBOSS
-Developpeurs : Arthur JOSI - Thibaut Desfachelles - Olivier Blazevic 
+
+Developpeurs : Arthur Josi - Thibaut Desfachelles - Olivier Blazevic 
 
 Les launch files pour le turtlebot réel sont placés dans le package simple_controller : 
 
