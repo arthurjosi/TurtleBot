@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- Ouverture de la simulation --> 
+	<include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch" />
+	
+	<!-- Ouverture de amcl permettant le bon positionnement du robot dans la carte -->
+	<include file="$(find turtlebot_gazebo)/launch/amcl_demo.launch"/>
+
+	<!--Ouverture de rviz avec les bons parametres --> 
+	<node pkg="tf" type="static_transform_publisher" name="add_laser_to_baselink" args="0.1 0 0.13 0 0 0 base_link laser 100">
+	</node>
+	
+	<!-- Paramettrage de la creation de la carte afin de ne garder que les donnees laser suffisament proches  -->
+	<node pkg="gmapping" type="slam_gmapping" name="slam_gmapping">
+		<param name="maxURange" value="4"/>
+		<param name="map_update_interval" value="5.0"/>
+	</node> 
+
+	<!-- Ouverture de rviz configurer pour permettre la creation de la carte -->
+	<include file="$(find turtlebot_rviz_launchers)/launch/view_navigation.launch" />
+
+	<!-- Node permettant l exploration autonome de l environnement -->
+	<node pkg="gazebo" type="exploration_autonome2.py" name="explo_auto"/>
+
+</launch>
