@@ -5,21 +5,21 @@
 **Les launch files pour le turtlebot réel sont placés dans le package simple_controller :**
 
 
-*-> Ouverture de la carte du labyrinth n°1 ou 2 dans RVIZ et possibilité de goal :*
+-> Ouverture de la carte du labyrinth n°1 ou 2 dans RVIZ et possibilité de goal :
 turtlebot_moveTo_salle1.launch
 turtlebot_moveTo_salle2.launch
 
-*-> Création de carte avec le robot dans RVIZ (avec ou sans rosbag): Teleoperation requise (en ssh), avec ou sans detection d'objets et affichage de marqueurs.*
+-> Création de carte avec le robot dans RVIZ (avec ou sans rosbag): Teleoperation requise (en ssh), avec ou sans detection d'objets et affichage de marqueurs.
 turtlebot_mapping.launch 
 turtlebot_mapping_from_rosbag.launch
 turtlebot_mapping_and_detect.launch	
 		-
 
-*-> Ouverture de la carte du labyrinth n°1 ou 2 dans RVIZ et detection d'objet avec positionnement de marqueurs :*
+-> Ouverture de la carte du labyrinth n°1 ou 2 dans RVIZ et detection d'objet avec positionnement de marqueurs :
 turtlebot_move_inmap1_and_detect.launch	
 turtlebot_move_inmap2_and_detect.launch	
 
-*-> Exploration autonome avec ou sans detection d'objets *
+-> Exploration autonome avec ou sans detection d'objets 
 turtlebot_explo_auto.launch
 turtlebot_explo_auto_and_detect.launch
 
