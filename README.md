@@ -33,7 +33,8 @@ roslaunch gazebo gazebo_moveTo.launch
 -> Simulation gazebo avec création d'une carte de l'environnement : 
 roslaunch gazebo gazebo_mapping.launch
 
--> Simulation de gazebo avec exploration autonome : -> La simulation ne semble pas fonctionner, sans doute un problème de topic mais non vérification par manque de temps.
+-> Simulation de gazebo avec exploration autonome : La simulation ne semble pas fonctionner, sans doute un problème de topic mais non vérification par manque de temps.
+
 roslaunch gazebo_exploration_autonome.launch
 
 -> La simulation de detection de bouteille n'aura pas été présentée pour des raisons évidentes. 
