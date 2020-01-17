@@ -25,7 +25,7 @@ turtlebot_explo_auto_and_detect.launch
 
 
 
-**SIMULATION - Les launch files sont situés dans le package gazebo : **
+**SIMULATION - Les launch files sont situés dans le package gazebo :**
 
 Simulation gazebo avec positionnement de points objectifs dans rviz : 
 roslaunch gazebo gazebo_moveTo.launch 
