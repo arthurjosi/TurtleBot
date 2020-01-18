@@ -9,8 +9,8 @@ Les scripts pythons :
 
 Dans le package simple_controller, on peut retrouver deux fichiers pythons que nous avons écrit. L'un permet la detection des objects avec le placement des marqueurs dans rviz ("detection_et_marqueurs.py"), l'autre permet l'exploration autonome de l'environnement ("exploration_autonome.py").
 
-**Les launch files pour le turtlebot réel sont placés dans le package simple_controller :**
-
+Les launch files pour le turtlebot réel sont placés dans le package simple_controller :
+==
 
 -> Ouverture de la carte du labyrinth n°1 ou 2 dans RVIZ et possibilité de goal :
 turtlebot_moveTo_salle1.launch
@@ -32,7 +32,8 @@ turtlebot_explo_auto_and_detect.launch
 
 
 
-**SIMULATION - Les launch files sont situés dans le package gazebo :**
+SIMULATION - Les launch files sont situés dans le package gazebo :
+==
 
 -> Simulation gazebo avec positionnement de points objectifs dans rviz : 
 	roslaunch gazebo gazebo_moveTo.launch 
@@ -45,6 +46,7 @@ turtlebot_explo_auto_and_detect.launch
 
 -> La simulation de detection de bouteille n'aura pas été présentée pour des raisons évidentes. 
 
-**VIDEO**
+VIDEO
+==
 La video ayant été faite avec un mauvais logiciel de montage, une bande de pub désagréable s'est placée au centre.
 Merci d'être compréhensible. Le lien est le suivant : 
