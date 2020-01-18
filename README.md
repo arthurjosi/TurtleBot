@@ -46,4 +46,5 @@ roslaunch gazebo_exploration_autonome.launch
 VIDEO
 ==
 La video ayant été faite avec un mauvais logiciel de montage, une bande de pub désagréable s'est placée au centre.
-Merci d'être compréhensible. Le lien est le suivant : 
+Merci d'être compréhensible. Le lien est le suivant :  
+https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fvy14sfsyd6fm67i%2FMa%2520vid%25C3%25A9o.mp4%3Fdl%3D0%26fbclid%3DIwAR27iF0VGoZd6aceU6w4YeHX1wxf8V8LkQL-w2KhxJq4EnAwkNLb00CohkE&h=AT2uHU8APiUooRDk9FLj_Dv6hgdtx8sCMByVdh2f2E2hj8UB6kAO1v0JCINe9USwLlpxG21SMt12d2yu56_oFKbXVr_IdqOVFi-whQsJgXkpUKCf48TvagwpjFcPaPy2yUA9Pw
