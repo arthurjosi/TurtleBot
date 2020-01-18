@@ -10,14 +10,14 @@ Dans le package simple_controller, on peut retrouver deux fichiers pythons que n
 ---
 Les launch files pour le turtlebot réel sont placés dans le package simple_controller :
 ==
--> Ouverture de la carte du labyrinth n°1 ou 2 dans RVIZ et possibilité de goal : 
-roslaunch simple_controller turtlebot_moveTo_salle1.launch 
+-> Ouverture de la carte du labyrinth n°1 ou 2 dans RVIZ et possibilité de goal :  
+roslaunch simple_controller turtlebot_moveTo_salle1.launch  
 roslaunch simple_controller turtlebot_moveTo_salle2.launch
 
--> Création de carte avec le robot dans RVIZ (avec ou sans rosbag): Teleoperation requise (en ssh), avec ou sans detection d'objets et affichage de marqueurs. 
-roslaunch simple_controller turtlebot_mapping.launch 
-roslaunch simple_controller turtlebot_mapping_from_rosbag.launch 
-roslaunch simple_controller turtlebot_mapping_and_detect.launch
+-> Création de carte avec le robot dans RVIZ (avec ou sans rosbag): Teleoperation requise (en ssh), avec ou sans detection d'objets et affichage de marqueurs.  
+roslaunch simple_controller turtlebot_mapping.launch  
+roslaunch simple_controller turtlebot_mapping_from_rosbag.launch  
+roslaunch simple_controller turtlebot_mapping_and_detect.launch  
 		
 -> Ouverture de la carte du labyrinth n°1 ou 2 dans RVIZ et detection d'objet avec positionnement de marqueurs :
 roslaunch simple_controller turtlebot_move_inmap1_and_detect.launch 	
