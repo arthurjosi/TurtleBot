@@ -40,6 +40,4 @@ turtlebot_explo_auto_and_detect.launch
 
 **VIDEO**
 La video ayant été faite avec un mauvais logiciel de montage, une bande de pub désagréable s'est placée au centre.
-Merci d'être compréhensible.
-
-
+Merci d'être compréhensible. Le lien est le suivant : 
