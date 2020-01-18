@@ -5,25 +5,25 @@ Developpeurs : Arthur Josi - Thibaut Desfachelles - Olivier Blazevic
 
 Les scripts pythons :
 ==
-Dans le package simple_controller, on peut retrouver deux fichiers pythons que nous avons écrit. L'un permet la detection des objects avec le placement des marqueurs dans rviz ("detection_et_marqueurs.py"), l'autre permet l'exploration autonome de l'environnement ("exploration_autonome.py").
+Dans le package simple_controller, on peut retrouver deux fichiers pythons que nous avons écrit. L'un permet la detection des objects avec le placement des marqueurs dans rviz (**"detection_et_marqueurs.py"**), l'autre permet l'exploration autonome de l'environnement (**"exploration_autonome.py"**).
 
 ---
 Les launch files pour le turtlebot réel sont placés dans le package simple_controller :
 ==
--> Ouverture de la carte du labyrinth n°1 ou 2 dans RVIZ et possibilité de goal :  
+**-> Ouverture de la carte du labyrinth n°1 ou 2 dans RVIZ et possibilité de goal :**  
 roslaunch simple_controller turtlebot_moveTo_salle1.launch  
 roslaunch simple_controller turtlebot_moveTo_salle2.launch
 
--> Création de carte avec le robot dans RVIZ (avec ou sans rosbag): Teleoperation requise (en ssh), avec ou sans detection d'objets et affichage de marqueurs.  
+**-> Création de carte avec le robot dans RVIZ (avec ou sans rosbag): Teleoperation requise (en ssh), avec ou sans detection d'objets et affichage de marqueurs.**  
 roslaunch simple_controller turtlebot_mapping.launch  
 roslaunch simple_controller turtlebot_mapping_from_rosbag.launch   
 roslaunch simple_controller turtlebot_mapping_and_detect.launch  
 		
--> Ouverture de la carte du labyrinth n°1 ou 2 dans RVIZ et detection d'objet avec positionnement de marqueurs :  
+**-> Ouverture de la carte du labyrinth n°1 ou 2 dans RVIZ et detection d'objet avec positionnement de marqueurs :**  
 roslaunch simple_controller turtlebot_move_inmap1_and_detect.launch 	 
 roslaunch simple_controller turtlebot_move_inmap2_and_detect.launch 	 
 
--> Exploration autonome avec ou sans detection d'objets   
+**-> Exploration autonome avec ou sans detection d'objets**   
 roslaunch simple_controller turtlebot_explo_auto.launch  
 roslaunch simple_controller turtlebot_explo_auto_and_detect.launch  
 
@@ -31,16 +31,16 @@ roslaunch simple_controller turtlebot_explo_auto_and_detect.launch
 
 SIMULATION - Les launch files sont situés dans le package gazebo :
 ==
--> Simulation gazebo avec positionnement de points objectifs dans rviz :  
+**-> Simulation gazebo avec positionnement de points objectifs dans rviz :**  
 roslaunch gazebo gazebo_moveTo.launch 
 
--> Simulation gazebo avec création d'une carte de l'environnement :  
+**-> Simulation gazebo avec création d'une carte de l'environnement :**  
 roslaunch gazebo gazebo_mapping.launch
 
--> Simulation de gazebo avec exploration autonome : La simulation ne semble pas fonctionner, sans doute un problème de topic mais non vérification par manque de temps.   
+**-> Simulation de gazebo avec exploration autonome : La simulation ne semble pas fonctionner, sans doute un problème de topic mais non vérification par manque de temps.**   
 roslaunch gazebo_exploration_autonome.launch
 
--> La simulation de detection de bouteille n'aura pas été présentée pour des raisons évidentes. 
+**-> La simulation de detection de bouteille n'aura pas été présentée pour des raisons évidentes.** 
 
 ---
 VIDEO
