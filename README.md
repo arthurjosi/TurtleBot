@@ -4,7 +4,6 @@
 
 Les scripts pythons :
 ==
-
 ---
 
 Dans le package simple_controller, on peut retrouver deux fichiers pythons que nous avons écrit. L'un permet la detection des objects avec le placement des marqueurs dans rviz ("detection_et_marqueurs.py"), l'autre permet l'exploration autonome de l'environnement ("exploration_autonome.py").
