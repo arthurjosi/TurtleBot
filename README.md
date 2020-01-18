@@ -1,4 +1,4 @@
-**Project Name : TurtleBOSS**
+**Projet : TurtleBOSS**
 
 **Developpeurs : Arthur Josi - Thibaut Desfachelles - Olivier Blazevic** 
 
