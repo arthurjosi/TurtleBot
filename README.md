@@ -2,8 +2,7 @@
 
 **Developpeurs :** Arthur Josi - Thibaut Desfachelles - Olivier Blazevic 
 
-**Les scripts pythons :**
-
+Les scripts pythons :
 ==
 
 ---
