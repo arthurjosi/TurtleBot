@@ -1,6 +1,6 @@
-Project Name : TurtleBOSS
+**Project Name : TurtleBOSS**
 
-Developpeurs : Arthur Josi - Thibaut Desfachelles - Olivier Blazevic 
+**Developpeurs : Arthur Josi - Thibaut Desfachelles - Olivier Blazevic** 
 
 
 Les scripts pythons :
